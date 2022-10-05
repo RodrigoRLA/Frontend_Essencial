@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter+Tight:wght@600;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="style_login.css">
+
+
+    <title>Login</title>
+
+</head>
+
+<body>
+
+
+
+    <div id="login">
+        <form class="card-login" type="submit" alt="Area para fazer login no site atraves de usuario e e-mail">
+            <div class="card-header">
+
+                <h1>Banca do </br> seu Zé</h1>
+                <img src="../../img/logo.svg" alt="Logo">
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-content-area">
+
+                    <label for="usuario">Usuário</label>
+
+                    <input type="text" id="usuario" autocomplete="off" alt="Campo para digitar o usuario">
+
+                </div>
+
+                <div class="card-content-area">
+
+                    <label for="password">Senha</label>
+
+                    <input type="password" id="senha" autocomplete="off" alt="campo para digitar sua senha">
+
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+
+                <button type="submit" class="validar" alt="Botao para logar">Login</button>
+
+                <!-- <button type="submit" class="validar" alt="Botao para logar"
+                    onclick="logar(); return false">Login</button> -->
+
+
+                <a href="#" class="recuperar_senha h-25" alt="campo para recuperar senha">Esqueceu a <button
+                        type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Senha ?
+                    </button></a>
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Troca de senha!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Você receberá um e-mail para alterar a sua senha!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
